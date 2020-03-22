@@ -484,22 +484,8 @@
           </div>
           <div class="header-right">
             <ul>
-              <li class="user_login customdropdown">
-                <a href="#" class="text-custom-white fw-700"><i class="fas fa-user-circle"></i> Jhon Anderson <i class="fas fa-angle-down"></i></a>
-                <ul class="dropdown-menu bg-custom-black">
-                  <li>
-                    <a href="#" class="text-custom-white">Profile</a>
-                  </li>
-                  <li>
-                    <a href="#" class="text-custom-white">Sign Up</a>
-                  </li>
-                  <li>
-                    <a href="#" class="text-custom-white">Sign In</a>
-                  </li>
-                  <li>
-                    <a href="faqs.html" class="text-custom-white">Help</a>
-                  </li>
-                </ul>
+              <li class="user_login">
+                <a href="#" class="text-custom-white fw-700" title="{{Auth::user()->email}}"><i class="fas fa-user-circle"></i> {{Auth::user()->name}} </a>
               </li>
               <li class="hamburger-menu collapsed" data-toggle="collapse" data-target="#navigation">
                 <span></span>
