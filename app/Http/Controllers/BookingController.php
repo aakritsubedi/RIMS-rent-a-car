@@ -16,7 +16,7 @@ class BookingController extends Controller
    */
   public function index()
   {
-    $vehicles = Vehicle::all();
+    $vehicles = Vehicle::all()->where('status', 1);
     $hiring = Booking::all();
 
     return view('booking.index', compact('hiring', 'vehicles'));
@@ -51,7 +51,7 @@ class BookingController extends Controller
    */
   public function show($id)
   {
-    $vehicles = Vehicle::all();
+    $vehicles = Vehicle::all()->where('status', 1);
     $hire = Booking::find($id);
 
     return view('booking.show', compact('hire', 'vehicles'));
