@@ -17,6 +17,12 @@
         <h3>Info</h3>
         <table class="table">
           <tr>
+            <td>Name: {{$vehicle->name}}</td>
+          </tr>
+          <tr>
+            <td>License Plate No.: {{$vehicle->license_plate_no}}</td>
+          </tr>
+          <tr>
             <td>Type: {{$vehicle->type}}</td>
           </tr>
           <tr>
