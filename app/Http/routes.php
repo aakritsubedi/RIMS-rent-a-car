@@ -11,6 +11,9 @@
 |
 */
 
+use App\Http\Controllers\VehicleController;
+use App\Vehicle;
+
 Route::get('/', function () {
     return view('welcome');
 });
@@ -27,3 +30,4 @@ Route::auth();
 
 Route::get('/home', 'HomeController@index');
 Route::get('/user', 'UserController@index');
+Route::resource('/vehicle','VehicleController');
