@@ -16,7 +16,7 @@
           <th>Owner Name</th>
           <th>Hiring Cost</th>
           <th>Status</th>
-          <th>Option</th>
+          <th>Options</th>
         </tr>
       </thead>
       <tbody>
@@ -25,7 +25,7 @@
           <td>{{$vehicle->id}}</td>
           <td>{{$vehicle->name}} (<small><b>{{$vehicle->license_plate_no}}</b></small>)</td>
           <td>{{$vehicle->type}}</td>
-          <td class="text-center font-weight-bold" title="{{$vehicle->no_of_seats}} Seater">{{$vehicle->no_of_seats}}</td>
+          <td title="{{$vehicle->no_of_seats}} Seater">{{$vehicle->no_of_seats}}</td>
           <td>{{ucfirst($vehicle->vehicle_conditions)}}</td>
           <td>
             @if($vehicle->ac_status == 1)
@@ -45,11 +45,20 @@
             <span class="text-danger">Not Available</span>
             @endif
           </td>
+          @if(Auth::user()->user_type == 'customer')
           <td>
+            <a href='{{route('vehicle.show',$vehicle->id)}}'class="btn btn-success btn-sm">Info</a>
             @if($vehicle->status == 1)
             <button class="btn btn-success btn-sm">Book Now</button>
             @endif
           </td>
+          @else
+          <td>
+            <a href='{{route('vehicle.show',$vehicle->id)}}' class="btn-sm btn-link text-success">Info</a>
+            <a href='{{route('vehicle.edit',$vehicle->id)}}' class="btn-sm btn-link text-warning">Edit</a>
+            <a href='{{route('vehicle.destroy',$vehicle->id)}}' class="btn-sm btn-link text-danger">Delete</a>
+          </td>
+          @endif
         </tr>
         @endforeach
       </tbody>

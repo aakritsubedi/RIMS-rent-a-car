@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 
 use App\Http\Requests;
 use App\Vehicle;
-
+use App\Photo;
 
 class VehicleController extends Controller
 {
@@ -44,7 +44,15 @@ class VehicleController extends Controller
 	 */
 	public function store(Request $request)
 	{
-		//
+		$input = $request->all();
+		if ($file = $request->file('photo_id')) {
+			$name = $input['name'] . $file->getClientOriginalName();
+			$file->move('img', $name);
+			$photo = Photo::create(['name' => $name]);
+			$input['photo_id'] = $photo->id;
+		}
+		Vehicle::create($input);
+		return redirect('/vehicle');
 	}
 
 	/**
@@ -55,7 +63,8 @@ class VehicleController extends Controller
 	 */
 	public function show($id)
 	{
-		//
+		$vehicle = Vehicle::findOrFail($id);
+		return view('vehicles.show', compact('vehicle'));
 	}
 
 	/**
@@ -66,7 +75,8 @@ class VehicleController extends Controller
 	 */
 	public function edit($id)
 	{
-		//
+		$vehicle = Vehicle::findOrFail($id);
+		return view('vehicles.edit', compact('vehicle'));
 	}
 
 	/**
@@ -78,7 +88,15 @@ class VehicleController extends Controller
 	 */
 	public function update(Request $request, $id)
 	{
-		//
+		$input = $request->all();
+		if ($file = $request->file('photo_id')) {
+			$name = $input['name'] . $file->getClientOriginalName();
+			$file->move('img', $name);
+			$photo = Photo::create(['name' => $name]);
+			$input['photo_id'] = $photo->id;
+		}
+		Vehicle::findOrFail($id)->update($input);
+		return redirect('/vehicle')->with('msg', 'The item has been updated.');;
 	}
 
 	/**
@@ -89,6 +107,8 @@ class VehicleController extends Controller
 	 */
 	public function destroy($id)
 	{
-		//
+		$vehicle = Vehicle::findOrFail($id);
+		$vehicle->delete();
+		return redirect('/vehicle')->with('msg', 'The item has been deleted.');
 	}
 }

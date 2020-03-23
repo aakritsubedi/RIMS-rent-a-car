@@ -8,7 +8,7 @@
     </div>
     <div class="col-md-8">
       <h2 class="text-center">Add Vehicles</h2>
-      {!! Form::open(['method'=>'POST', 'action'=>['VehicleController@create'], 'files'=>true]) !!}
+      {!! Form::open(['method'=>'POST', 'action'=>['VehicleController@store'], 'files'=>true]) !!}
       <div class="form-group">
         {!! Form::text('license_plate_no', null, ['class' => 'form-control','placeholder'=>'License Plate No.']) !!}
       </div>
@@ -16,10 +16,13 @@
         {!! Form::text('name', null, ['class' => 'form-control','placeholder'=>'Car Brand/Name.']) !!}
       </div>
       <div class="form-group">
-        {!! Form::text('no_of_seat', null, ['class' => 'form-control','placeholder'=>'No. of seats in vehicle']) !!}
+        {!! Form::text('type', null, ['class' => 'form-control','placeholder'=>'Vehicle Category']) !!}
       </div>
       <div class="form-group">
-        {{ Form::select('vehicle_condition', ['not stated'=>'Select vehicle condition','good' => 'Good', 'medium' => 'Medium','bad'=>'Bad'], null, ['class'=>'form-control']) }}
+        {!! Form::text('no_of_seats', null, ['class' => 'form-control','placeholder'=>'No. of seats in vehicle']) !!}
+      </div>
+      <div class="form-group">
+        {{ Form::select('vehicle_conditions', ['not stated'=>'Select vehicle condition','good' => 'Good', 'medium' => 'Medium','bad'=>'Bad'], null, ['class'=>'form-control']) }}
       </div>
       <div class="form-group">
         {{ Form::select('ac_status', ['n/a'=>'AC Status',true => 'Available', false => 'Not available'], null, ['class'=>'form-control']) }}
