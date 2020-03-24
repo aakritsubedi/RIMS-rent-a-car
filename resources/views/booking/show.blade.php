@@ -6,9 +6,9 @@
     <h2 class="text-center">Booking Info</h2>
     <div class="row">
       <div class="card col-md-6 offset-3">
-        <img class="card-img-top" style='height:175px;' src="{{asset('img/')}}/{{$hire->vehicle->photo->name}}" alt="Card image cap">
+        <img class="card-img-top" style='height:225px;' src="{{asset('img/')}}/{{$hire->vehicle->photo->name}}" alt="Card image cap">
         <div class="card-body">
-          <span class="h5 card-title">{{substr($hire->user->name,0,strpos($hire->user->name,' '))}}'s Booking</span><br>
+          <span class="h5 card-title">{{$hire->user->name}}'s Booking</span><br>
           <b>Travel Date: </b> {{Carbon\Carbon::parse($hire->travel_date)->toFormattedDateString()}}<br />
           <b>Booked By: </b>
           <ul style='list-style:none;'>
