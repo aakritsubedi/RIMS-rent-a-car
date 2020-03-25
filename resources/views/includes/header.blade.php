@@ -41,7 +41,8 @@
       <div class="col-md-12">
         <div class="logo" style='text-align: center;'>
           <a href="#">
-            <img src="{{asset('images/logo.png')}}" class="img-fluid" alt="Logo">
+            <i class="h1 flaticon-supercar"></i>
+            <img src="{{asset('images/logo_dai.jpg')}}" class="img-fluid" alt="Logo">
           </a>
         </div>
       </div>

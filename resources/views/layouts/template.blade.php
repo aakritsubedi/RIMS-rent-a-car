@@ -28,7 +28,9 @@
   <!-- Custom Responsive -->
   <link href="{{asset('css/responsive.css')}}" rel="stylesheet">
   <!-- Color Change -->
-  <link class="color-changing" href="{{asset('css/color13.css')}}" rel="stylesheet">
+  <link href="{{asset('css/color13.css')}}" rel="stylesheet">
+  <!-- Sticky Note -->
+  <link href="{{asset('css/stickyNote.css')}}" rel="stylesheet">
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&amp;display=swap">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;display=swap">
