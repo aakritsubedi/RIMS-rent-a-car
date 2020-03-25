@@ -24,7 +24,7 @@
                     <li class="menu-item">
                       <a href="{{ url('/vehicle')}}">Vehicles Inventory</a>
                     </li>
-                    @if(Auth::user()->user_type == 'admin')
+                    @if(Auth::user() && Auth::user()->user_type == 'admin')
                     <li class="menu-item">
                       <a href="{{ url('/vehicle/create')}}">Add Vehicles</a>
                     </li>
@@ -45,7 +45,7 @@
                 <li class="menu-item menu-item-has-children">
                   <a href="#" class="text-custom-white">Feedback</a>
                   <ul class="sub-menu">
-                    @if(Auth::user()->user_type == 'customer')
+                    @if(Auth::user() && Auth::user()->user_type == 'customer')
                     <li class="menu-item">
                       <a href="{{ url('/feedback/create')}}">Write Feedback</a>
                     </li>
