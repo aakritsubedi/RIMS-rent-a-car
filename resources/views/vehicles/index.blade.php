@@ -49,14 +49,14 @@
           <td>
             <a href='{{route('vehicle.show',$vehicle->id)}}'class="btn btn-success btn-sm">Info</a>
             @if($vehicle->status == 1)
-            <button class="btn btn-success btn-sm">Book Now</button>
+            <a href="{{route('booking.create')}}" class="btn btn-success btn-sm">Book</a>
             @endif
           </td>
           @else
           <td>
-            <a href='{{route('vehicle.show',$vehicle->id)}}' class="btn-sm btn-link text-success">Info</a>
-            <a href='{{route('vehicle.edit',$vehicle->id)}}' class="btn-sm btn-link text-warning">Edit</a>
-            <a href='{{route('vehicle.destroy',$vehicle->id)}}' class="btn-sm btn-link text-danger">Delete</a>
+            <a href="{{route('vehicle.show',$vehicle->id)}}" class="btn-sm btn-link text-success">Info</a>
+            <a href="{{route('vehicle.edit',$vehicle->id)}}" class="btn-sm btn-link text-warning">Edit</a>
+            <a href="{{route('vehicle.destroy',$vehicle->id)}}" class="btn-sm btn-link text-danger">Delete</a>
           </td>
           @endif
         </tr>

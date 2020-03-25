@@ -56,7 +56,10 @@
                   </ul>
                 </li>
                 <li class="menu-item">
-                  <a href="contact.html" class="text-custom-white">Contact</a>
+                  <a href="{{ url('/about') }}" class="text-custom-white">About Us</a>
+                </li>
+                <li class="menu-item">
+                  <a href="{{ url('/contact') }}" class="text-custom-white">Contact</a>
                 </li>
               </ul>
             </nav>
@@ -65,9 +68,9 @@
             <ul>
               <li class="user_login">
                 @if(Auth::user())
-                <a href="#" class="text-custom-white fw-700" title="{{Auth::user()->email}}"><i class="fas fa-user-circle"></i> {{Auth::user()->name}} </a>
+                <a href="{{ url('/profile') }}" class="text-custom-white fw-700" title="{{Auth::user()->email}}"><i class="fas fa-user-circle"></i> {{Auth::user()->name}} </a>
                 @else
-                <a href="#"><i class="fas fa-user-circle"></i> Login</a>
+                <a href="{{ url('/login') }}"><i class="fas fa-user-circle"></i>Login</a>
                 @endif
               </li>
               <li class="hamburger-menu collapsed" data-toggle="collapse" data-target="#navigation">
