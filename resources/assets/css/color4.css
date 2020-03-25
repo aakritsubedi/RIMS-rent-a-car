@@ -113,7 +113,7 @@ blockquote h6,
 .footer_widget p a:hover,
 .insta_url:hover,
 .primary-color  {
-    color: #FF715B;
+    color: #4C4B4B;
 }
 
 
@@ -213,7 +213,7 @@ blockquote h6,
 .sj-single-product-purches .quantity button:hover,
 .btn,
 .custom-checkbox .custom-control-input:checked~.custom-control-label::before {
-    background: #FF715B;
+    background: #4C4B4B;
 }
 
 
@@ -221,40 +221,39 @@ blockquote h6,
 
 .bg-yellow-op-9,
 .team_url {
-    background: rgba(255, 113, 91, 0.9);
+    background: #4C4B4B
 }
 
 .bg-yellow-op-8 {
-    background: rgba(255, 113, 91, 0.8);
+    background: #4C4B4B
 }
 
 .bg-yellow-op-7 {
-    background: rgba(255, 113, 91, 0.7);
-}
+    background: #4C4B4B;
 
 .bg-yellow-op-6 {
-    background: rgba(255, 113, 91, 0.6);
+    background: #4C4B4B
 }
 
 .bg-yellow-op-5 {
-    background: rgba(255, 113, 91, 0.5);
+    background: #4C4B4B
 }
 
 .bg-yellow-op-4,
 .sj-video-header .overlay {
-    background: rgba(255, 113, 91, 0.4);
+    background: #4C4B4B
 }
 
 .bg-yellow-op-3 {
-    background: rgba(255, 113, 91, 0.3);
+    background: #4C4B4B;
 }
 
 .bg-yellow-op-2 {
-    background: rgba(255, 113, 91, 0.2);
+    background: #4C4B4B;
 }
 
 .bg-yellow-op-1 {
-    background: rgba(255, 113, 91, 0.1);
+    background: #4C4B4B;
 }
 
 
@@ -282,14 +281,14 @@ blockquote h6,
 .tag_cloud a:hover,
 #sj .irs--round .irs-handle,
 .product_action ul li a:hover{
-    border-color: #FF715B;
+    border-color: #4C4B4B;
 }
 
 
 /*border left color*/
 
 .happyclients:before {
-    border-left-color: #FF715B;
+    border-left-color: #4C4B4B;
 }
 
 /*border left color*/

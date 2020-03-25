@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Booking;
 use App\Vehicle;
+use App\User;
 
 use Illuminate\Http\Request;
 
@@ -29,7 +30,20 @@ class BookingController extends Controller
    */
   public function create()
   {
-    //
+    $option = array('' => 'Please Select Vehicle of your choice');
+    $driverOption = array('' => 'Please Select driver of your choice');
+
+    $vehicles = Vehicle::all()->where('status', 1);
+    foreach($vehicles as $vehicle){
+      $option[$vehicle->id] = $vehicle->name.'(Rs.'.$vehicle->hiring_cost.')';
+    }
+
+    $drivers = User::all()->where('user_type','driver');
+    foreach($drivers as $driver){
+      $driverOption[$driver->name] = $driver->name;
+    }
+    
+    return view('booking.create', compact('option', 'driverOption' ,'vehicles'));
   }
 
   /**
@@ -40,7 +54,9 @@ class BookingController extends Controller
    */
   public function store(Request $request)
   {
-    //
+    Booking::create($request->all());
+
+    return redirect('booking');
   }
 
   /**
