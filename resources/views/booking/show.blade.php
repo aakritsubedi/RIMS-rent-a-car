@@ -3,7 +3,17 @@
 @section('content')
 <div class="row mt-3">
   <div class="col-md-10 offset-1">
-    <h2 class="text-center">Booking Info</h2>
+    <div class="section-header">
+      <div class="section-heading">
+        <h3 class="text-custom-black fw-700">Booking <span class="text-custom-red">Information</span></h3>
+        <div class="heading-after">
+          <div class="line bg-custom-red"></div>
+          <div class="circle"></div>
+          <div class="line bg-custom-red"></div>
+        </div>
+        <p class="text-light-white">see booking information.</p>
+      </div>
+    </div>
     <div class="row">
       <div class="card col-md-6 offset-3">
         <img class="card-img-top" style='height:225px;' src="{{asset('img/')}}/{{$hire->vehicle->photo->name}}" alt="Card image cap">
@@ -36,7 +46,6 @@
           </ul>
           <b>Payment Status: </b> {{$hire->payment_status}}
           <br>
-          <a href="#" class="btn btn-sm btn-primary float-right">Go</a>
         </div>
       </div>
     </div>

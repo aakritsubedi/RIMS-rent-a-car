@@ -26,6 +26,10 @@ Route::get('/about', function() {
     return view('about-us');
 });
 
+Route::get('/contact', function() {
+    return view('contact');
+});
+
 Route::auth();
 
 Route::get('/home', 'HomeController@index');

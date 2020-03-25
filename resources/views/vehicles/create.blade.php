@@ -7,7 +7,16 @@
       <img src="{{asset('images/homepage-1/about.jpg')}}" class="img-responsive" alt="Rent a car">
     </div>
     <div class="col-md-8">
-      <h2 class="text-center">Add Vehicles</h2>
+      <div class="section-header">
+        <div class="section-heading">
+          <h3 class="text-custom-black fw-700">Add <span class="text-custom-red">Vehicles</span></h3>
+          <div class="heading-after">
+            <div class="line bg-custom-red"></div>
+            <div class="circle"></div>
+            <div class="line bg-custom-red"></div>
+          </div>
+        </div>
+      </div>
       {!! Form::open(['method'=>'POST', 'action'=>['VehicleController@store'], 'files'=>true]) !!}
       <div class="form-group">
         {!! Form::text('license_plate_no', null, ['class' => 'form-control','placeholder'=>'License Plate No.']) !!}

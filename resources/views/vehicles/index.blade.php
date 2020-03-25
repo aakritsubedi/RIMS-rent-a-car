@@ -3,7 +3,16 @@
 @section('content')
 <div class="row">
   <div class="col-md-10 offset-1 mt-3">
-    <h2 class="text-center">Available Vehicles</h2>
+  <div class="section-header">
+        <div class="section-heading">
+          <h3 class="text-custom-black fw-700">Available <span class="text-custom-red">Vehicles</span></h3>
+          <div class="heading-after">
+            <div class="line bg-custom-red"></div>
+            <div class="circle"></div>
+            <div class="line bg-custom-red"></div>
+          </div>
+        </div>
+      </div>
     <table class="table table-hover">
       <thead>
         <tr>
@@ -47,7 +56,7 @@
           </td>
           @if(Auth::user()->user_type == 'customer')
           <td>
-            <a href='{{route('vehicle.show',$vehicle->id)}}'class="btn btn-success btn-sm">Info</a>
+            <a href="{{route('vehicle.show',$vehicle->id)}}" class="btn btn-success btn-sm">Info</a>
             @if($vehicle->status == 1)
             <a href="{{route('booking.create')}}" class="btn btn-success btn-sm">Book</a>
             @endif

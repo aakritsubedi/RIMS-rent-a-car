@@ -4,7 +4,17 @@
 <div class="container">
   <div class="row mt-3">
     <div class="col-md-8 offset-2">
-      <h2 class="text-center">Book your vehicle</h2>
+      <div class="section-header">
+        <div class="section-heading">
+          <h3 class="text-custom-black fw-700">Send your <span class="text-custom-red">Feedback</span></h3>
+          <div class="heading-after">
+            <div class="line bg-custom-red"></div>
+            <div class="circle"></div>
+            <div class="line bg-custom-red"></div>
+          </div>
+          <p class="text-light-white">we are here to help and answer any question you might have. We look forward to hearing from you.</p>
+        </div>
+      </div>
       {!! Form::open(['method'=>'POST', 'action'=>['FeedbackController@store'], 'files'=>true]) !!}
       <div class="form-group">
         {!! Form::label('name', 'Name:') !!}

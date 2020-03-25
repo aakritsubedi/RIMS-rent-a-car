@@ -7,7 +7,16 @@
       <img src="{{asset('images/homepage-1/about.jpg')}}" class="img-responsive" alt="Rent a car">
     </div>
     <div class="col-md-8">
-      <h2 class="text-center">Update Vehicle Info </h2>
+    <div class="section-header">
+        <div class="section-heading">
+          <h3 class="text-custom-black fw-700">Update <span class="text-custom-red">Vehicle Info</span></h3>
+          <div class="heading-after">
+            <div class="line bg-custom-red"></div>
+            <div class="circle"></div>
+            <div class="line bg-custom-red"></div>
+          </div>
+        </div>
+      </div>
       {!! Form::model($vehicle,['method'=>'PATCH', 'action'=>['VehicleController@update',$vehicle->id], 'files'=>true]) !!}
       <div class="form-group">
         {!! Form::label('license_plate_no', 'License Plate No.:') !!}

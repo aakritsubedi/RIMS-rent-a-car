@@ -4,7 +4,16 @@
 <div class="container">
   <div class="row mt-3">
     <div class="col-md-10 offset-1">
-      <h2 class="text-center">Feedback from {{$feedback->name}}</h2>
+    <div class="section-header">
+        <div class="section-heading">
+          <h3 class="text-custom-black fw-700">Feedback from <span class="text-custom-red">{{$feedback->name}}</span></h3>
+          <div class="heading-after">
+            <div class="line bg-custom-red"></div>
+            <div class="circle"></div>
+            <div class="line bg-custom-red"></div>
+          </div>
+        </div>
+      </div>
       <hr>
       <h3>Subject: {{$feedback->subject}}</h3>
       <p style="text-align: justify; text-indent: 50px;">

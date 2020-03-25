@@ -3,7 +3,17 @@
 @section('content')
 <div class="row mt-3">
   <div class="col-md-10 offset-1">
-    <h2 class="text-center">Booking Info</h2>
+    <div class="section-header">
+      <div class="section-heading">
+        <h3 class="text-custom-black fw-700">Booking <span class="text-custom-red">Information</span></h3>
+        <div class="heading-after">
+          <div class="line bg-custom-red"></div>
+          <div class="circle"></div>
+          <div class="line bg-custom-red"></div>
+        </div>
+        <p class="text-light-white">see booking information.</p>
+      </div>
+    </div>
     <div class="row">
       @foreach($hiring as $hire)
       <div class="card col-md-3">
@@ -32,7 +42,7 @@
           </ul>
           <b>Payment Status: </b> {{$hire->payment_status}}
           <br>
-          <a href="#" class="btn btn-sm btn-primary float-right">Go</a>
+          <a href="{{route('booking.show',$hire->id)}}" class="btn btn-success btn-sm float-right">Go</a>
         </div>
       </div>
       @endforeach

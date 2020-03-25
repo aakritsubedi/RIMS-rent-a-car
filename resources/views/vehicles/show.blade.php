@@ -3,7 +3,16 @@
 @section('content')
 <div class="row mt-3">
   <div class="col-md-8 offset-2">
-    <h2>{{$vehicle->name}}'s Info</h2>
+    <div class="section-header">
+      <div class="section-heading">
+        <h3 class="text-custom-black fw-700">{{$vehicle->name}} <span class="text-custom-red">Information</span></h3>
+        <div class="heading-after">
+          <div class="line bg-custom-red"></div>
+          <div class="circle"></div>
+          <div class="line bg-custom-red"></div>
+        </div>
+      </div>
+    </div>
     <div class="row">
       <div class="col-md-5">
         <p>{{$vehicle->description}}</p>
@@ -60,7 +69,7 @@
           <tr>
             <td class="text-right">
               @if($vehicle->status == 1)
-              <button class="btn btn-success btn-lg">Book Now</button>
+              <a href="{{route('booking.create')}}" class="btn btn-success btn-sm">Book</a>
               @endif
             </td>
           </tr>

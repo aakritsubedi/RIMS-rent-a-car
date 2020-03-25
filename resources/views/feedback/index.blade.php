@@ -4,8 +4,17 @@
 <div class="container">
   <div class="row mt-3">
     <div class="col-md-10 offset-1">
-      <h2 class="text-center">Feedbacks</h2>
-      <h4 class="h4 text-center">what our customer say...</h4>
+    <div class="section-header">
+        <div class="section-heading">
+          <h3 class="text-custom-black fw-700">Your <span class="text-custom-red">Feedback</span></h3>
+          <div class="heading-after">
+            <div class="line bg-custom-red"></div>
+            <div class="circle"></div>
+            <div class="line bg-custom-red"></div>
+          </div>
+          <p class="text-light-white">what our customers say</p>
+        </div>
+      </div>
       <div id="board">
         @foreach($feedbacks as $feedback)
         <div class="note ui-draggable ui-draggable-handle clearfix">
