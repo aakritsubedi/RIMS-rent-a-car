@@ -8,7 +8,7 @@
           <div class="circle"></div>
           <div class="line bg-custom-red"></div>
         </div>
-        <p class="text-custom-white">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+        <p class="text-custom-white">What our customer says.</p>
       </div>
     </div>
     <div class="row">
@@ -19,11 +19,11 @@
               <div class="testimonial-block">
                 <div class="text">
                   <span class="fa fa-quote-left text-custom-red"></span>
-                  <p class="text-light-white fs-16">Quisque sollicitudin feugiat risus, eu posuere ex euismod eu. Phasellus hendrerit, massa efficitur dapibus pulvinar, sapien eros sodales ante, euismod aliquet nulla metus a mauris.</p>
+                  <p class="text-light-white fs-16">For a student like me and many others out there, Tootle is just the right thing. For once, we would love not to ride in the over-crowded tempos and the over-priced taxis and simply reach our destination on time. Had a great ride the other day and the app seems perfect. I really hope this works out. </p>
                 </div>
                 <div class="quote">
-                  <h6 class="name"><a href="#" class="text-custom-black fs-16">Brian Wright</a></h6>
-                  <p class="designation text-light-white">Founder</p>
+                  <h6 class="name"><a href="#" class="text-custom-black fs-16">Sita Kharel</a></h6>
+                  <p class="designation text-light-white">Customer</p>
                   <img src="{{asset('images/team/01-100.jpg')}}" class="img-fluid" alt="#">
                 </div>
               </div>
@@ -32,11 +32,11 @@
               <div class="testimonial-block">
                 <div class="text">
                   <span class="fa fa-quote-left text-custom-red"></span>
-                  <p class="text-light-white fs-16">Quisque sollicitudin feugiat risus, eu posuere ex euismod eu. Phasellus hendrerit, massa efficitur dapibus pulvinar, sapien eros sodales ante, euismod aliquet nulla metus a mauris.</p>
+                  <p class="text-light-white fs-16">For a student like me and many others out there, Tootle is just the right thing. For once, we would love not to ride in the over-crowded tempos and the over-priced taxis and simply reach our destination on time. Had a great ride the other day and the app seems perfect. I really hope this works out.</p>
                 </div>
                 <div class="quote">
-                  <h6 class="name"><a href="#" class="text-custom-black fs-16">Jhone Deo</a></h6>
-                  <p class="designation text-light-white">Co Founder</p>
+                  <h6 class="name"><a href="#" class="text-custom-black fs-16">Ramin Shah</a></h6>
+                  <p class="designation text-light-white">Customer</p>
                   <img src="{{asset('images/team/03-100.jpg')}}" class="img-fluid" alt="#">
                 </div>
               </div>
@@ -45,11 +45,11 @@
               <div class="testimonial-block">
                 <div class="text">
                   <span class="fa fa-quote-left text-custom-red"></span>
-                  <p class="text-light-white fs-16">Quisque sollicitudin feugiat risus, eu posuere ex euismod eu. Phasellus hendrerit, massa efficitur dapibus pulvinar, sapien eros sodales ante, euismod aliquet nulla metus a mauris.</p>
+                  <p class="text-light-white fs-16">For a student like me and many others out there, Tootle is just the right thing. For once, we would love not to ride in the over-crowded tempos and the over-priced taxis and simply reach our destination on time. Had a great ride the other day and the app seems perfect. I really hope this works out.</p>
                 </div>
                 <div class="quote">
-                  <h6 class="name"><a href="#" class="text-custom-black fs-16">Sarah Wright</a></h6>
-                  <p class="designation text-light-white">Ceo</p>
+                  <h6 class="name"><a href="#" class="text-custom-black fs-16">Sandeep Pokherel</a></h6>
+                  <p class="designation text-light-white">Driver</p>
                   <img src="{{asset('images/team/02-100.jpg')}}" class="img-fluid" alt="#">
                 </div>
               </div>
@@ -58,10 +58,10 @@
               <div class="testimonial-block">
                 <div class="text">
                   <span class="fa fa-quote-left text-custom-red"></span>
-                  <p class="text-light-white fs-16">Quisque sollicitudin feugiat risus, eu posuere ex euismod eu. Phasellus hendrerit, massa efficitur dapibus pulvinar, sapien eros sodales ante, euismod aliquet nulla metus a mauris.</p>
+                  <p class="text-light-white fs-16">I was late for office and badly needed a ride. One of my friends had suggested tootle, a ride sharing service in a minimal charge. I thought about giving it a try and this turned out to be a fun ride. I reached my office 10 minutes earlier than usual. I highly recommend tootle to all my friends.</p>
                 </div>
                 <div class="quote">
-                  <h6 class="name"><a href="#" class="text-custom-black fs-16">Anna Wright</a></h6>
+                  <h6 class="name"><a href="#" class="text-custom-black fs-16">Narayan Khadka</a></h6>
                   <p class="designation text-light-white">President</p>
                   <img src="{{asset('images/team/01-100.jpg')}}" class="img-fluid" alt="#">
                 </div>

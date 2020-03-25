@@ -1,6 +1,16 @@
 <div class="row">
   <div class="col-md-10 offset-1 mt-3">
-    <h3 class="text-center">FAQS (Common Question)</h3>
+    <div class="section-header">
+      <div class="section-heading">
+        <h3 class="text-custom-black fw-700">Frequently Asked <span class="text-custom-red" style="font-weight: bolder;">Questions</span></h3>
+        <div class="heading-after">
+          <div class="line bg-custom-red"></div>
+          <div class="circle"></div>
+          <div class="line bg-custom-red"></div>
+        </div>
+        <p class="text-light-white">find your answer here...</p>
+      </div>
+    </div>
     <p><strong>1. Can I drive the car myself?</strong><br> <b>Ans: </b> We are sorry, that we do not offer self-drive so; we offer the car rental with driver only.</p>
     <p><strong>2. How can I book the car rental in Nepal?</strong><br> <b>Ans: </b> As per our company policy we request to send 50% of the total cost but our management has decided that you may send your passport copy for confirmation then we will book and confirm the car rental in Nepal</p>
     <p><strong>3. Will someone come to meet at the time of trip starts?</strong><br> <b>Ans: </b> Our office representative will come to meet you with the car.</p>

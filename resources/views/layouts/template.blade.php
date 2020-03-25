@@ -51,9 +51,6 @@
   <!-- Section  -->
   @yield('content')
   <!-- End of Section -->
-  <!-- start how it works -->
-  @include('includes/how_it_works')
-  <!-- end how it works -->
   <!-- start our testimonials -->
   @include('includes/testimonials')
   <!-- end our testimonials -->

@@ -8,7 +8,7 @@
           <div class="circle"></div>
           <div class="line bg-custom-red"></div>
         </div>
-        <p class="text-light-white">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+        <p class="text-light-white">At the center of your being you have the answer: you know who you are and you know what you want. You too are a <span class="text-custom-red">brand</span>.</p>
       </div>
     </div>
     <div class="row">
