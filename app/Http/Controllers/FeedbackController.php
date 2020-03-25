@@ -9,6 +9,10 @@ use App\Http\Requests;
 
 class FeedbackController extends Controller
 {
+  public function __construct()
+  {
+    $this->middleware('auth');
+  }
   /**
    * Display a listing of the resource.
    *
@@ -17,7 +21,7 @@ class FeedbackController extends Controller
   public function index()
   {
     $feedbacks = Feedback::all();
-    
+
     return view('feedback.index', compact('feedbacks'));
   }
 
@@ -41,7 +45,7 @@ class FeedbackController extends Controller
   {
     Feedback::create($request->all());
 
-    return redirect('/')->with('msg','Thank you for your feedback. Our representative will reach you as soon as possible.');
+    return redirect('/')->with('msg', 'Thank you for your feedback. Our representative will reach you as soon as possible.');
   }
 
   /**
@@ -53,7 +57,7 @@ class FeedbackController extends Controller
   public function show($id)
   {
     $feedback = Feedback::findOrFail($id);
-    
+
     return view('feedback.show', compact('feedback'));
   }
 

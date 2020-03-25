@@ -10,6 +10,10 @@ use Illuminate\Http\Request;
 
 class BookingController extends Controller
 {
+  public function __construct()
+  {
+    $this->middleware('auth');
+  }
   /**
    * Display a listing of the resource.
    *
@@ -34,16 +38,16 @@ class BookingController extends Controller
     $driverOption = array('' => 'Please Select driver of your choice');
 
     $vehicles = Vehicle::all()->where('status', 1);
-    foreach($vehicles as $vehicle){
-      $option[$vehicle->id] = $vehicle->name.'(Rs.'.$vehicle->hiring_cost.')';
+    foreach ($vehicles as $vehicle) {
+      $option[$vehicle->id] = $vehicle->name . '(Rs.' . $vehicle->hiring_cost . ')';
     }
 
-    $drivers = User::all()->where('user_type','driver');
-    foreach($drivers as $driver){
+    $drivers = User::all()->where('user_type', 'driver');
+    foreach ($drivers as $driver) {
       $driverOption[$driver->name] = $driver->name;
     }
-    
-    return view('booking.create', compact('option', 'driverOption' ,'vehicles'));
+
+    return view('booking.create', compact('option', 'driverOption', 'vehicles'));
   }
 
   /**
