@@ -65,11 +65,9 @@
         @foreach($booked as $hire)
         <tr>
           <td>
-            <b>Vehicle Info:</b>
             <ul style="list-style: none;">
-              <li>License No.: {{$hire->vehicle->license_plate_no}}</li>
-              <li>Hiring Cost: Rs. {{number_format($hire->vehicle->hiring_cost,2)}}</li>
-              <li>No. of seat: {{$hire->vehicle->no_of_seats}}</li>
+              <li>License No.:<br> {{$hire->vehicle->license_plate_no}}</li>
+              <li>Hiring Cost:<br> Rs. {{number_format($hire->vehicle->hiring_cost,2)}}</li>
               <li>AC Status:
                 @if($hire->vehicle->ac_status == 1)
                 <span class="text-success">Available</span>
@@ -80,7 +78,6 @@
             </ul>
           </td>
           <td>
-            <b>Driver's Info: </b>
             <ul style='list-style:none;'>
               <li>Name: {{$hire->drive_name}}</li>
               <li>License No.: {{$hire->driver_license_no}}</li>
@@ -88,10 +85,10 @@
             </ul>
           </td>
           <td>
-            <b>Payment Status: </b> {{$hire->payment_status}}
+            {{$hire->payment_status}}
           </td>
           <td>
-            <b>Travel Date: </b> {{Carbon\Carbon::parse($hire->travel_date)->toFormattedDateString()}}
+            <b>Travel Date: </b><br> {{Carbon\Carbon::parse($hire->travel_date)->toFormattedDateString()}}
           </td>
         </tr>
         @endforeach
