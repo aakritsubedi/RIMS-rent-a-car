@@ -28,7 +28,9 @@ class HomeController extends Controller
    */
   public function index()
   {
-    return view('home');
+    $vehicles= Vehicle::all();
+
+    return view('welcome', compact('vehicles'));
   }
 
   public function profile()

@@ -14,9 +14,7 @@
 use App\Http\Controllers\VehicleController;
 use App\Vehicle;
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'HomeController@index');
 
 Route::get('/faq', function () {
     return view('faq');
@@ -34,6 +32,7 @@ Route::auth();
 
 Route::get('/profile', 'HomeController@profile');
 Route::get('/user', 'UserController@index');
+Route::get('/vehicle/all','VehicleController@all');
 Route::resource('/vehicle','VehicleController');
 Route::resource('/booking','BookingController');
 Route::resource('/feedback','FeedbackController');

@@ -111,4 +111,10 @@ class VehicleController extends Controller
 		$vehicle->delete();
 		return redirect('/vehicle')->with('msg', 'The item has been deleted.');
 	}
+
+	public function all()
+	{
+		$vehicles = Vehicle::all();
+		return view('vehicles.allVehicles', compact('vehicles'));
+	}
 }

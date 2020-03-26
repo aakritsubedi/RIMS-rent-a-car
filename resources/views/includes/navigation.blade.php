@@ -24,6 +24,9 @@
                     <li class="menu-item">
                       <a href="{{ url('/vehicle')}}">Vehicles Inventory</a>
                     </li>
+                    <li class="menu-item">
+                      <a href="{{ url('/vehicle/all')}}">All Vechicles</a>
+                    </li>
                     @if(Auth::user() && Auth::user()->user_type == 'admin')
                     <li class="menu-item">
                       <a href="{{ url('/vehicle/create')}}">Add Vehicles</a>
