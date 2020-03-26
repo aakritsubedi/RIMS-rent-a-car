@@ -50,6 +50,7 @@
   <!-- end banner -->
   <!-- Section  -->
   @yield('content')
+  <br>
   <!-- End of Section -->
   <!-- start our testimonials -->
   @include('includes/testimonials')
