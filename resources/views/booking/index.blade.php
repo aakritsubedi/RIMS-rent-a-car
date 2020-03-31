@@ -2,7 +2,7 @@
 
 @section('content')
 <div class="row mt-3">
-  <div class="col-md-10 offset-1">
+  <div class="col-md-12">
     <div class="section-header">
       <div class="section-heading">
         <h3 class="text-custom-black fw-700">Booking <span class="text-custom-red">Information</span></h3>
@@ -16,7 +16,7 @@
     </div>
     <div class="row">
       @foreach($hiring as $hire)
-      <div class="card col-md-3">
+      <div class="card col-md-4 p-2">
         <img class="card-img-top" style='height:175px;' src="{{asset('img/')}}/{{$hire->vehicle->photo->name}}" alt="Card image cap">
         <div class="card-body">
           <span class="h5 card-title">{{substr($hire->user->name,0,strpos($hire->user->name,' '))}}'s Booking</span><br>

@@ -4,7 +4,9 @@
       <div class="widget-content-wrapper">
         <div class="widget-content-left  ml-3 header-user-info">
           <div class="widget-heading">
-            {{ Auth::user()->name}}
+            <a href="{{ url('/profile') }}">
+              {{ Auth::user()->name}}
+            </a>
           </div>
           <div class="widget-subheading">
             {{ strtoupper(Auth::user()->user_type) }}

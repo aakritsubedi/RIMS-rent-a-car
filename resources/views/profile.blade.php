@@ -24,7 +24,7 @@
       <span>No vehicle owned.</span><br>
       <a href="{{ url('/vehicle/create') }}" class='btn btn-success'>Add Your Car</a>
       @else
-      <table class="table-hover">
+      <table class="table table-hover">
         @foreach($owned as $vehicle)
         <tr>
           <td>{{$vehicle->id}}</td>
@@ -61,38 +61,30 @@
       <span>-No vehicle hired-</span><br>
       <a href="{{ url('/booking/create') }}" class='btn btn-success'>Book Now</a>
       @else
-      <table class="table-hover">
+      <div class="vertical-time-simple vertical-without-time vertical-timeline vertical-timeline--animate vertical-timeline--one-column">
         @foreach($booked as $hire)
-        <tr>
-          <td>
-            <ul style="list-style: none;">
-              <li>License No.:<br> {{$hire->vehicle->license_plate_no}}</li>
-              <li>Hiring Cost:<br> Rs. {{number_format($hire->vehicle->hiring_cost,2)}}</li>
-              <li>AC Status:
-                @if($hire->vehicle->ac_status == 1)
-                <span class="text-success">Available</span>
-                @else
-                <span class="text-danger">Not Available</span>
-                @endif
-              </li>
-            </ul>
-          </td>
-          <td>
-            <ul style='list-style:none;'>
-              <li>Name: {{$hire->drive_name}}</li>
-              <li>License No.: {{$hire->driver_license_no}}</li>
-              <li>Contact No.: {{$hire->drive_contact_no}}</li>
-            </ul>
-          </td>
-          <td>
-            {{$hire->payment_status}}
-          </td>
-          <td>
-            <b>Travel Date: </b><br> {{Carbon\Carbon::parse($hire->travel_date)->toFormattedDateString()}}
-          </td>
-        </tr>
+        <div class="vertical-timeline-item dot-warning vertical-timeline-element">
+          <div>
+            <span class="vertical-timeline-element-icon bounce-in"></span>
+            <div class="vertical-timeline-element-content bounce-in">
+              <h4 class="timeline-title">
+                {{$hire->vehicle->name}}
+                <small>({{ $hire->vehicle->license_plate_no}})</small>
+                <br>
+                <b>Driver Info: </b>
+                <ul style="list-style: none;">
+                  <li><b>Name: </b> {{$hire->drive_name}}</li>
+                  <li><b>Contact No.: </b> {{$hire->drive_contact_no}}</li>
+                  <li><b>License No.: </b> {{$hire->driver_license_no}}</li>
+                </ul>
+                <b>Payment Status: </b> {{ $hire->payment_status}}<br>
+                <b>Travel Date: </b> {{Carbon\Carbon::parse($hire->travel_date)->toFormattedDateString()}}
+              </h4>
+            </div>
+          </div>
+        </div>
         @endforeach
-      </table>
+      </div>
       @endif
     </div>
   </div>

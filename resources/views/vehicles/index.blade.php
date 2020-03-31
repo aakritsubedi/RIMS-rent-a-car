@@ -2,10 +2,12 @@
 
 @section('content')
 <div class="row">
-  <div class="col-md-10 offset-1 mt-3">
+  <div class="col-md-12 mt-3">
   <div class="section-header">
         <div class="section-heading">
-          <h3 class="text-custom-black fw-700">Available <span class="text-custom-red">Vehicles</span></h3>
+          <h3 class="text-custom-black fw-700">
+            <i class="fa fa-car"></i> &nbsp;
+            Available <span class="text-custom-red">Vehicles</span></h3>
           <div class="heading-after">
             <div class="line bg-custom-red"></div>
             <div class="circle"></div>

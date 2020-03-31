@@ -1,0 +1,6 @@
+.inline-list li {
+  float: left;
+  width: auto;
+  margin-left: 10px;
+  list-style: none;
+}

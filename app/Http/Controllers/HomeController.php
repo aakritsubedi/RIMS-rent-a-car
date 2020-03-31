@@ -6,6 +6,8 @@ use App\Booking;
 use App\Feedback;
 use App\Http\Requests;
 use App\Vehicle;
+use App\User;
+
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
@@ -28,9 +30,12 @@ class HomeController extends Controller
    */
   public function index()
   {
-    $vehicles= Vehicle::all();
+    $vehicles= Vehicle::all()->where('status',1)->take(3);
+    $vehicleCount = count(Vehicle::all());
+    $userCount = count(User::all());
+    $bookingCount = count(Booking::all());
 
-    return view('welcome', compact('vehicles'));
+    return view('welcome', compact('vehicleCount','userCount','bookingCount','vehicles'));
   }
 
   public function profile()

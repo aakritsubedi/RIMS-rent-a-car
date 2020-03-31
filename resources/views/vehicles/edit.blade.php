@@ -4,7 +4,7 @@
 <div class="container mt-3">
   <div class="row">
     <div class="col-md-4">
-      <img src="{{asset('images/homepage-1/about.jpg')}}" class="img-responsive" alt="Rent a car">
+      <img src="{{asset('images/about.png')}}" class="img-thumbnail" alt="Rent a car">
     </div>
     <div class="col-md-8">
     <div class="section-header">

@@ -5,24 +5,25 @@
   <div class="row mt-5">
     <div class="col-lg-4 col-sm-6">
       <div class="btn-first red-btn contact-info-box mb-md-40">
-        <i class="fas fa-map-marker-alt"></i>
+        <i class="h3 fa fa-map-marker"></i>
         <h6 class="text-custom-black fw-600">Kamal Marg, Kathmandu<br> Nepal 44600</h6>
       </div>
     </div>
     <div class="col-lg-4 col-sm-6">
       <div class="btn-first red-btn contact-info-box mb-md-40">
-        <i class="fas fa-phone-alt"></i>
+        <i class="h3 fa fa-phone"></i>
         <h6 class="text-custom-black fw-600"><a href="#" class="text-custom-black">(+977) 441-2929, 980-1022446</a><br> Sun-Fri 8:00am-4:00pm</h6>
       </div>
     </div>
     <div class="col-lg-4 col-sm-6">
       <div class="btn-first red-btn contact-info-box">
-        <i class="fas fa-envelope"></i>
+        <i class="h3 fa fa-envelope"></i>
         <h6 class="text-custom-black fw-600"><a href="#" class="text-custom-black">info@dairental.com</a><br> 24 X 7 online support</h6>
       </div>
     </div>
   </div>
 </div>
+<hr>
 <section class="section-padding contact-form">
   <div class="container">
     <div class="section-header">

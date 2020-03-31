@@ -5,7 +5,7 @@
   <div class="row mt-3">
     <div class="col-md-6">
       <h4 class="text-center mt-3">Rent a Car in Nepal</h4>
-      <img src="{{asset('images/homepage-1/about.jpg')}}" class="img-responsive" alt="about us">
+      <img src="{{asset('images/about.png')}}" class="img-thumbnail" alt="about us">
     </div>
     <div class="col-md-6">
       <h2 class="text-center mt-3">About Us</h2>

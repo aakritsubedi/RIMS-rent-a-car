@@ -5,6 +5,7 @@
       <li class="mm-active">
         <a href="#">
           Vehicles
+          <i class="fa fa-car"></i>
         </a>
         <ul>
           <li>
@@ -23,6 +24,7 @@
       <li class="mm-active">
         <a href="#">
           Bookings
+          <i class="fa fa-book"></i>
         </a>
         <ul>
           <li class="mm-active">
@@ -36,6 +38,7 @@
       <li class="mm-active">
         <a href="#">
           Feedback
+          <i class="fa fa-envelope-open"></i>
         </a>
         <ul>
           @if(Auth::user() && Auth::user()->user_type == 'customer')
@@ -49,13 +52,22 @@
         </ul>
       </li>
       <li class="mm-active">
-        <a href="{{ url('/faq') }}" class="text-custom-white">FAQ</a>
+        <a href="{{ url('/faq') }}" class="text-custom-white">
+          FAQ
+          <i class="fa fa-question-circle"></i>
+        </a>
       </li>
       <li class="mm-active">
-        <a href="{{ url('/about') }}" class="text-custom-white">About Us</a>
+        <a href="{{ url('/about') }}" class="text-custom-white">
+          About Us
+          <i class="fa fa-user-circle"></i>
+        </a>
       </li>
       <li class="mm-active">
-        <a href="{{ url('/contact') }}" class="text-custom-white">Contact</a>
+        <a href="{{ url('/contact') }}" class="text-custom-white">
+          Contact
+          <i class="fa fa-phone-square"></i>
+        </a>
       </li>
     </ul>
   </div>
